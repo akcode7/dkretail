@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DK RETAIL Next.js Site
 
-## Getting Started
+This project is a Next.js + Tailwind CSS implementation of the DK RETAIL pages:
 
-First, run the development server:
+- `/` Home
+- `/about` About
+- `/showcase` Showcase
+- `/contact` Contact
+
+The contact page submits to `POST /api/contact`, which sends:
+
+1. A notification email to the site owner
+2. A confirmation email to the user
+
+using Zoho SMTP via Nodemailer.
+
+## Local Development
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Copy env template and fill values:
+
+```bash
+cp .env.example .env.local
+```
+
+3. Run dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Required Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Define these in `.env.local` and in Vercel project settings:
 
-## Learn More
+- `ZOHO_SMTP_HOST` (example: `smtp.zoho.com`)
+- `ZOHO_SMTP_PORT` (usually `465`)
+- `ZOHO_SMTP_USER` (Zoho mailbox used to send mail)
+- `ZOHO_SMTP_PASS` (Zoho app-specific password)
+- `CONTACT_EMAIL_TO` (recipient address for incoming contact requests)
 
-To learn more about Next.js, take a look at the following resources:
+## Zoho SMTP Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Use an app-specific password from Zoho.
+- Keep SMTP credentials server-only. Do not prefix with `NEXT_PUBLIC_`.
+- Port `465` is configured as secure SMTP in this app.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Reference: https://www.zoho.com/mail/help/zoho-smtp.html
 
-## Deploy on Vercel
+## Vercel Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push repository to your Git provider.
+2. Import project in Vercel.
+3. Add all environment variables in Vercel Settings > Environment Variables.
+4. Deploy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+After deploy, submit the contact form once and verify:
+
+1. Owner email arrives at `CONTACT_EMAIL_TO`.
+2. User confirmation email arrives at the submitter email.
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Production build
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
