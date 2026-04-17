@@ -34,6 +34,22 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     console.error("Contact form submit error:", error);
+
+    if (
+      typeof error === "object" &&
+      error !== null &&
+      "code" in error &&
+      (error as { code?: string }).code === "EAUTH"
+    ) {
+      return Response.json(
+        {
+          message:
+            "SMTP authentication failed. Verify Zoho mailbox, app password, and SMTP host region.",
+        },
+        { status: 502 }
+      );
+    }
+
     return Response.json(
       { message: "Unable to send your message right now. Please try again shortly." },
       { status: 500 }

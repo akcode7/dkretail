@@ -47,6 +47,11 @@ function createTransport() {
   const port = Number(getRequiredEnv("ZOHO_SMTP_PORT"));
   const user = getRequiredEnv("ZOHO_SMTP_USER");
   const pass = getRequiredEnv("ZOHO_SMTP_PASS");
+  const authMethod = (process.env.ZOHO_SMTP_AUTH_METHOD || "LOGIN").toUpperCase();
+
+  if (!Number.isFinite(port)) {
+    throw new Error("Invalid SMTP port configured in ZOHO_SMTP_PORT");
+  }
 
   return nodemailer.createTransport({
     host,
@@ -56,6 +61,7 @@ function createTransport() {
       user,
       pass,
     },
+    authMethod,
   });
 }
 
