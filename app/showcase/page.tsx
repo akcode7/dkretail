@@ -20,7 +20,7 @@ export default function ShowcasePage() {
             description:
               "Reliable wired and wireless input devices for offices and teams with consistent quality and bulk availability.",
             image:
-              "https://lh3.googleusercontent.com/aida-public/AB6AXuDloF0h81JJM1T77W_o8S5tZonKhIGs045IcG3y40Df7HJ9jGJp23TkZAVk1cdn3wnDMRvRNjJcg_Fo_Z1wQWbzLnNShD_-c24CiTLWEB3CCK53Cx_RFT-GTpmLZ1YCXVCSHw0KSv9xmhUlZIAtlUKMjIxzMyZ-IBsfV-Jg_A98mu43xI0L6ogPh78R-1jHbSL_g51ggvZdjFlPu6gdj5u5EE_XP5El7rEyagcAT8FkBRxfz-CPTb6hMXojMj4-MCjlRTwu9WR07wah",
+              "images/keyboard.png",
             specs: [
               ["Keyboard", "Wired and wireless options"],
               ["Mouse", "Office and performance models"],
@@ -35,7 +35,7 @@ export default function ShowcasePage() {
             description:
               "Complete display and connectivity supply for desks, labs, and business infrastructure projects.",
             image:
-              "https://lh3.googleusercontent.com/aida-public/AB6AXuCjg_LxGqyhVrKXbLc1GL1ndmNCBbuhLoxvobyW-2p_dXE1Msady4Z3OCGCn0JcJkT1ARupynAyS3jZx80DT6kODew3iet63qrHtqe2UOMJbWhn_nQSQ3UJ6xF-3obZkCa6VYfCCOvjNzAfQGwI350FFSSfOeBDzWiAuGR6P0P1gOsOuVSIB_apfB_y802oOgkK4xVQuygc0gufdV2yi1DlBZwwSH6LBJi6yxwd4rUpzMRzqNSqrkpmL7L5o80mHiHVY352VsJmNIJR",
+              "images/monitor-2.png",
             specs: [
               ["Monitors", "Business-ready display range"],
               ["HDMI / VGA", "Stable video connectivity"],
@@ -50,7 +50,7 @@ export default function ShowcasePage() {
             description:
               "USB drives, external storage, routers, chargers, cooling pads, adapters, and SMPS for day-to-day IT operations.",
             image:
-              "https://lh3.googleusercontent.com/aida-public/AB6AXuCt3TIExm2VfXbQTJzLNZE4iwEPwcTq9Dutqw6nqmeL0UkkbeOvJsJYfT1aoP1FJ2cFqOSn4W5ues7XqgmzKZBPG2J5Ulu92UPVsMREQ5o2JsCOTPqYsrIEiu8EA8nK4aetwDH5x5UsyX4vXzGX2kyGuRJgBW62eZnAQOK9wSORB5PTzHmOpppbKNdB9p_bLdpdjvppGMCKc78RKgVw_05ayA2TR38pkgFa7VBU7xMLB4m9BpXqTTfw4jtsrZjRwDfbu7f_8Ps-xS3j",
+              "images/mouse.png",
             specs: [
               ["Storage", "USB drives and external devices"],
               ["Networking", "Routers and accessories"],
@@ -69,7 +69,7 @@ export default function ShowcasePage() {
               <img
                 src={item.image}
                 alt={item.title}
-                className="aspect-[4/3] w-full rounded-lg object-cover sm:aspect-square"
+                className="aspect-4/3 w-full rounded-lg object-cover sm:aspect-square"
               />
             </div>
             <div
@@ -107,19 +107,19 @@ export default function ShowcasePage() {
                 name: "USB Drives & Storage",
                 meta: "Corporate data transfer and backup",
                 image:
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuCvYZrS0i7ScI3cGKAm8ieP_v0x3xsSd6P0Jf2pYYEJzht7jsP2_rUTP2D9FpLK3VhwmU0-H48O09tgXIPXHP_lrPj9ScH9O2q7PKDsR-Xd9H-Xn2tyOAtlroQWHv2r3LotgzaPWgb6NoGONnHflzpLMulKiVbuTtnMut4ZZTZoFfzHzYh5QjFQtJ3EdhagRpfhlxL4Jlxc417EDi-VwEz3e3FV7ZYubXDY3JC3RVQQ4Udo9tx1YTAIt2EWBbJN1-rzVhE7Y5VgZbFy",
+                  "images/ssd.png",
               },
               {
                 name: "Networking Products",
                 meta: "LAN cables, routers and accessories",
                 image:
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuB3BrX79zCJPeUwzGA8-BB9L2s6yZdigTfV2hC06weXntC3J0fNs1uOoNABzkBLVBxhzyFN0nEA50Tllb7fjg0OBX9iNPNTVAenRUEFxzSp1VTGCnKtrDpEwPIyW9-oabz6807biTB9vYZmjy9IL2Lt3MW5DnjuMwIyDFMJT4Nl6DS3vk9qwZ7KXlOTP7m4o650F-4NqNMwQtPDntWhg1nnkrtcFwSVWFOQnI4ptyrQ34bvJxdXkFbznkAFnwMvAQrg74wr3swrS5Rr",
+                  "images/networking1.png",
               },
               {
                 name: "Laptop Accessories",
                 meta: "Chargers, cooling pads, adapters, SMPS",
                 image:
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuACNrZrVioit9Ehq_jJm6Z4DkJ_r_kZJHt5powJ-6jlBpKP5215nMnicXsbjM_qMn3rbjDM2jlimGSMtOjEK4_QOVJQ4EOZJJSjE7hJ3JVGf4mORtQnHxRczTPKehQXT7PqfspiEspc1x_6bOGMrQtRCuc8i-mnmXvipmpUASskPAOs9Iqyw-dkxJlp-HsT-iVBNorp6EHRJG8dvOtNudBco1PtmktEzpQpuvdeRdfvMJz_5ZeEtXLrgL9r_L3zw6rqCdPnFtKLghWr",
+                  "images/cooling.png",
               },
             ].map((item) => (
               <article key={item.name} className="rounded-xl bg-surface-container-lowest p-4">

@@ -1,6 +1,9 @@
 import { ContactForm } from "../components/contact-form";
 
 export default function ContactPage() {
+  const mapQuery = "Alasanatham Rd, Hosur, Tamil Nadu 635109";
+  const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(mapQuery)}&output=embed`;
+
   return (
     <main className="pt-16 md:pt-20">
       <section className="section-shell py-14 md:py-20">
@@ -92,32 +95,44 @@ export default function ContactPage() {
                 </p>
               </div>
             </div>
+
           </aside>
         </div>
       </section>
 
       <section className="relative h-70 overflow-hidden bg-[#051228] sm:h-90 md:h-105">
         <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa_whkKC13Mvce2YVtLkvhslqu53Z_xQ5UM6zDInFjY0XSFAJz6A55f3SJottv64_eies-bhOkm6T6E1FY1zs1aRmP1hOv4_dnx4fZ1ovwP7Bf4VwtAefOvRby5dwxZi_vARCyuVf_xVL15JUmB70iCvslMYFe2aYOVbit1DSfNXulT_Bezzug3gJ6vhM1Z6kWeEb8XrNcdPe_vNmwf5h_IKUf2keZjM1wZ2yeHP09ds-2pnaNaBKDfPNo33iGw9LTTIzYgiRYw3kO"
+          src="images/map.png"
           alt="City map background"
           className="h-full w-full object-cover opacity-55"
         />
         <div className="absolute inset-0 bg-[#02112a]/45"></div>
         <div className="absolute inset-0 flex items-center justify-center px-4">
-          <div className="flex items-center gap-3 rounded-lg border border-white/20 bg-white/90 px-4 py-3 shadow-2xl">
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full cta-gradient text-on-primary">
-              <span
-                className="material-symbols-outlined"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                location_on
+          <div className="w-full max-w-lg rounded-lg border border-white/20 bg-white/90 p-3 shadow-2xl sm:p-4">
+            <div className="mb-3 flex items-center gap-3">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full cta-gradient text-on-primary">
+                <span
+                  className="material-symbols-outlined"
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  location_on
+                </span>
               </span>
-            </span>
-            <div>
-              <p className="text-sm font-black uppercase tracking-tight">Hosur Business Location</p>
-              <p className="text-[10px] uppercase tracking-[0.16em] text-on-surface-variant">
-                Local delivery and order support
-              </p>
+              <div>
+                <p className="text-sm font-black uppercase tracking-tight">Hosur Business Location</p>
+                <p className="text-[10px] uppercase tracking-[0.16em] text-on-surface-variant">
+                  Alasanatham Rd, Hosur, Tamil Nadu 635109
+                </p>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-md border border-outline-variant/25">
+              <iframe
+                title="Alasanatham Road, Hosur location map"
+                src={mapEmbedUrl}
+                className="h-56 w-full"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
         </div>

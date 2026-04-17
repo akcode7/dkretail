@@ -31,7 +31,7 @@ export function SiteFooter() {
           <div className="mt-3 grid gap-2 text-xs text-on-surface-variant">
             <p>+91 7639090715</p>
             <p>sales@dktetails.com</p>
-            <p>Hosur, Tamil Nadu</p>
+            <p>Alasanatham Rd, Hosur, Tamil Nadu 635109</p>
           </div>
         </div>
         <div>

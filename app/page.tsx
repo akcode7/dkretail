@@ -30,7 +30,7 @@ export default function Home() {
           <div className="lg:col-span-6">
             <div className="panel-soft overflow-hidden p-6 sm:p-8">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtfC2VP933gdDc0YNLFQw53qeEV1UEoaSLzL9ybnTQA9RDmmIxzaYmXV0BlSZyj39YGFJ6aKBVG5d02hiuA9bDOXm7dhE2w2E39yBF6es7ivBYRnDJodBN7kKnENkSU3t9IVjCrVbeJT4mg1QaEikhCGIGS_ZDiYoy6weF2OCxRUIJ_KrtXlYOFWb6QHgPa8kQSPMin781hWIg9NJLQSSuh1C9zwYEe0Cih7joO6AtnZ-OuXdfYnKjfKK91WxuOxFlcQ0vq1pOkIm0"
+                src="images/keyboard2.png"
                 alt="Mechanical keyboard"
                 className="mx-auto w-full max-w-xl rounded-xl object-cover"
               />
@@ -54,7 +54,7 @@ export default function Home() {
           <div className="grid auto-rows-[180px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[220px]">
             <article className="group relative overflow-hidden rounded-xl sm:col-span-2 sm:row-span-2">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRmKRwxnmzXjK6Bu1dACVulkirbF6wIIcI0dhrKXjnzEpfL7P20LvgQve5KhHbcb0D3i6h_VzhxnUaJMh2XK7Jx2nQ7m2ceJpZ5kE3D5Fci62kBuDEK6NDZe9o_AFtaIPNRD1KJghz6eVhdb1dWpral7RzfIaOroAJrBaEddkv9XYMT2uc_zgnkhTtlGCis5GJGfxz2DfBcNrZWcnax7totDIhqzILHXAVadOjlkG0l5VkItODvueGy_yGUo3FZHFjtVQ8YJvX-Dc9"
+                src="images/keyboard1.png"
                 alt="Keyboards"
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
@@ -66,7 +66,7 @@ export default function Home() {
             </article>
             <article className="group relative overflow-hidden rounded-xl">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1fvcspo2duFV78TAeAa5JWWNZjGdCl_bAH0AfpoCOWTazdNUidifeF4hK3I5FEsOsYQ_mHhtYcjioqYiYUCRF2AM7yu90Mwme_6BWM7zs_GVKLNbV3JMYZVSsYCvNatwtPW0i3FnLFmazwF3SeIoQUwBH65IQBQpkIj4qk6qm3C8ADvKJcXufYVJgqyY_LwXFhNFfL53SHFEek70svTN-Y3e1ARQTcsFWPgrt5UxBke1wwshhh_tyuxdnRQ7t4qGUYvUduvxKrUSS"
+                src="images/networking2.png"
                 alt="Mice"
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
@@ -76,7 +76,7 @@ export default function Home() {
             </article>
             <article className="group relative overflow-hidden rounded-xl">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtgZ0F9xRlytKlgWTSDb7fppySkOSqUlX9hYkoMLxXdVpHeS_1RFEeiBiOBEmAj6hnHLEwR1pBwRxSEBp9N1A8O1gPqteQET3FXmXsHVv0RwB0ru54MmeA8VmqAw2-cBmYHh2T5278oCyALqzVzEVfu4if4Ql-zKu9eDsEZDKRbAhFDQSjZItnCUQl3CIEo7P3TBz_fHzsXpguwbhXukG5XOP9ctiE5HX8vFS56sGgh5vO8cNq8EvTCUu2NH6GkGqnaEhW6Wu1Mtv3"
+                src="/images/storage.png"
                 alt="Audio"
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
@@ -86,7 +86,7 @@ export default function Home() {
             </article>
             <article className="group relative overflow-hidden rounded-xl sm:col-span-2">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-ZnHZ-MH3tQ4cmVAICA1YW-EHS5JqmmEPMlXFCsbgpm0vWzQtdd2bZuuSeI71kJJtGB-e2AQZDXOsilGJKa3nwAzZpwqvIfbyZAQ73pHbS0aGdyVU_LXYbFk1CK6NL7DkCUoAOag2LZJQhkoUmnNsWVWnoJIqmQngb_uL0E5QRl8tCyC0XQafJKl208cwJh0f0wRbQA9bUwCjtcF_msBrDoXcDN4KBpiVxyoBrmowsLLgXFkSx3TGuQgwdCVZAi6iULVtOtYX_l1M"
+                src="images/monitors.png"
                 alt="Monitors"
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
@@ -120,19 +120,19 @@ export default function Home() {
                 name: "Monitors & Display Accessories",
                 price: "Business and office display support",
                 image:
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuDqW8hftJ6lc0LoJ23r3cBKbvdCL_KrdUj-TiaSwg2ag1Q_X9FG0ztiKRBmjpfMh4tHrvbOLvVCjeQzSIn0s84f8oCKgqOXtk-8MOx1QvVTrp8XM6WM5wp2FehoQsC4K9F5i8lDJBIi4sZuCk_RxRYk-NJDW3shcxhDCId7upwt_lBQF4k3DBhL1iwhchYcd5BMHIQEilUvkvB6KjTHKsBXE2yv4K3lff3u0INZ32jvY58aXBnz0mp-9ZsqcCVgGEbQ0qBRVCbQpscn",
+                  "/images/monitors.png",
               },
               {
                 name: "HDMI, VGA & LAN Cables",
                 price: "Reliable connectivity products",
                 image:
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuAFqF3ldeA80Xq0N7dWu1LB_MRre_jf5WQvWguQpA3-FMI3ZiFosgUZc7U1oFC61QK7yV7ZR0Z09fWDk-3nmg7P4b3GZ0hYo3pe_IQydKHh8dS86J4sAvz73qIsyXrbYYXTOxn0lb2OkjgvT2pjSinxaKT2aPWjv3-Kmfd2hqTaAhT3aK2ezJfG63jjWpJp2Pxi0lr3Dbs3k40YIR01TYWWWya9lgPOBpWD7ZAOMzorxTvQVA5uSYchp-YUqmv-Bsf23w4DCGZmG3GD",
+                  "/images/cables.png",
               },
               {
                 name: "Networking and Laptop Accessories",
                 price: "Adapters, SMPS, routers and more",
                 image:
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuCxZjo9F-eoqf7ogEFvRNWW_H3poS0prx3W8XczUnQpOaHoxeFoLmNJLKiSVLeaRlN03PK-mBlmtYbh3RFFEfyKFa3wuO5m3u3kM42DWylYANJlpCu1-hyWKrnPp0bITh24Ho-hHLEyFJQDmQHGX8uUvaIjvumcD95tn7uk4kSa8rQ8tOMAW2leUKK7pVjp0aVjJuhYFbEl9tMXtsxfZUuNrpLqHflNHr4pnSVOKoKeshnThOmAZ5AQPEwuj9QCVoM6FQhvlMjjWnUf",
+                  "/images/networking.png",
               },
             ].map((product) => (
               <article key={product.name} className="panel-soft p-5">
